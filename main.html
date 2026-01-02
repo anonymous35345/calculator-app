@@ -9,27 +9,30 @@
 <body>
 <div id="calculator_frame">
      <div id="screen">
-
+        <h1 id="screen_txt1">000</h1>
+        <h5 id="screen_txt2">000</h5>
     </div>
     <div id="buttons">
         <div id="nums">
-            <button class="numbtn">1</button>
-            <button class="numbtn">2</button>
-            <button class="numbtn">3</button>
-            <button class="numbtn">4</button>
-            <button class="numbtn">5</button>
-            <button class="numbtn">6</button>
-            <button class="numbtn">7</button>
-            <button class="numbtn">8</button>
-            <button class="numbtn">9</button>
-            <button id="zero" class="numbtn">0</button>
-            <button class="numbtn">.</button>
+            <button  data-value="1" id="num1" class="numbtn">1</button>
+            <button  data-value="2" id="num2" class="numbtn">2</button>
+            <button  data-value="3" id="num3" class="numbtn">3</button>
+            <button  data-value="4" id="num4" class="numbtn">4</button>
+            <button  data-value="5" id="num5" class="numbtn">5</button>
+            <button  data-value="6" id="num6" class="numbtn">6</button>
+            <button  data-value="7" id="num7" class="numbtn">7</button>
+            <button  data-value="8" id="num8" class="numbtn">8</button>
+            <button  data-value="9" id="num9" class="numbtn">9</button>
+            <button  data-value="0" id="zero" class="numbtn">0</button>
+            <button  data-value="." id="numdot" class="numbtn">.</button>
         </div>
         <div id="mp">
-            <button class="numbtnmp">+</button>
-            <button class="numbtnmp">-</button>
-            <button class="numbtnmp">*</button>
-            <button class="numbtnmp">/</button>
+            <button  data-value="+" id="num+" class="numbtnmp">+</button>
+            <button  data-value="-" id="num-" class="numbtnmp">-</button>
+            <button  data-value="*" id="num*" class="numbtnmp">*</button>
+            <button  data-value="/" id="num/" class="numbtnmp">/</button>
+            <button onclick="resault()" data-value=""></button>
+           
 
 
         </div>
