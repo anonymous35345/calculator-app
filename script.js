@@ -4,18 +4,18 @@ function textcalculating(){
      btn.addEventListener("click" , () => {
         textcal =  textcal+btn.dataset.value
         console.log(textcal)
-        let resault = parseFloat(textcal);
-        console.log(resault);
         
      })
     })
 }
 textcalculating();
-  
-
-
-
-let username = "15*88+66"
-rere = username.replaceAll("*" , "multiplicatiopn")
-console.log(rere);
+function resault(){
+ let currentres = 0;
+let numarr = textcal.split("+");
+for(i =0 ; i <numarr.length ; i++){
+    currentres= currentres + Number(numarr[i]);
+}   
+console.log(currentres);
+document.querySelector("h1").textContent = currentres;
+}
 
